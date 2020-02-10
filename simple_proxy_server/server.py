@@ -14,7 +14,7 @@ def main():
     args = parser.parse_args()
 
     loop = asyncio.get_event_loop()
-    types = ['HTTPS']
+    types = ['HTTPS', 'HTTP']
     broker = Broker(max_tries=1, loop=loop)
     broker.serve(host=args.addr, port=args.port, types=types, 
             limit=10, max_tries=3)

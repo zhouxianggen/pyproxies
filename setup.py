@@ -9,7 +9,9 @@ except ImportError:
 setup(
         name = 'simple_proxy_server',
         version = '1.0',
-        install_requires = [], 
+        install_requires = [
+                'requests', 
+                'git+https://github.com/constverum/ProxyBroker.git@master'], 
         description = 'simple proxy server',
         url = 'https://github.com/zhouxianggen/simple_proxy_server', 
         author = 'zhouxianggen',
