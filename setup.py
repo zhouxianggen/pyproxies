@@ -10,8 +10,9 @@ setup(
         name = 'simple_proxy_server',
         version = '1.0',
         install_requires = [
-                'requests', 
-                'git+https://github.com/constverum/ProxyBroker.git@master'], 
+                'requests',
+                'ProxyBroker @ git+https://github.com/constverum/ProxyBroker.git'
+                ], 
         description = 'simple proxy server',
         url = 'https://github.com/zhouxianggen/simple_proxy_server', 
         author = 'zhouxianggen',
